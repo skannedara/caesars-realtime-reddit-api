@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pusher Realtime Reddit API</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="tsc_css_shadows.css" />
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="pusher-reddit.css">
+<body>
+  <header id="top-bar">
+      <img src="images/logo.png" height="110px" alt="DZone" class="floatleft" />
+      <div id="right-side">Caesars App: Realtime Reddit API</div>
+  </header>
+  <section class="drop-shadow curved curved-vt-2">
+    <input class="typeahead subreddit-input" type="text" placeholder="AskReddit">
+
+    <div class="listening">
+      Listening <i class="fa fa-refresh fa-spin"></i>  
+    </div>
+
+    <ul class="listings"></ul>
+  </section>
+
+  <section class="drop-shadow curved curved-vt-2">
+    <input class="typeahead subreddit-input" type="text" placeholder="pics">
+
+    <div class="listening">
+      Listening <i class="fa fa-refresh fa-spin"></i>  
+    </div>
+
+    <ul class="listings"></ul>
+  </section>
+
+  <section class="drop-shadow curved curved-vt-2">
+    <input class="typeahead subreddit-input" type="text" placeholder="gifs">
+
+    <div class="listening">
+      Listening <i class="fa fa-refresh fa-spin"></i>  
+    </div>
+
+    <ul class="listings"></ul>
+  </section>
+
+  <section class="drop-shadow curved curved-vt-2">
+    <input class="typeahead subreddit-input" type="text" placeholder="EarthPorn">
+    
+    <div class="listening">
+      Listening <i class="fa fa-refresh fa-spin"></i>  
+    </div>
+
+    <ul class="listings"></ul>
+  </section>
+
+  <script src="http://js.pusher.com/2.2/pusher.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="typeahead.bundle.min.js"></script>
+  <script src="pusher-reddit.js"></script>
+</body>
+</html>
