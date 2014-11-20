@@ -31,7 +31,7 @@ var substringMatcher = function(strs) {
   };
 };
  
-var subreddits = ["funny","AdviceAnimals","pics","aww","todayilearned","videos","WTF","gaming","leagueoflegends","gifs","AskReddit","worldnews","TrollXChromosomes","pcmasterrace","4chan","movies","trees","mildlyinteresting","DotA2","reactiongifs","news","politics","pokemon","soccer","atheism","cringepics","technology","gentlemanboners","MakeupAddiction","Minecraft","science","TumblrInAction","woahdude","Showerthoughts","nba","Unexpected","anime","Jokes","cats","Celebs","hearthstone","smashbros","IAmA","gameofthrones","explainlikeimfive","polandball","teenagers","tifu","SquaredCircle","facepalm","conspiracy","circlejerk","GlobalOffensive","Music","bestof","Games","tattoos","food","nfl","EarthPorn","TrollYChromosome","skyrim","fatpeoplehate","comics","magicTCG","Marvel","talesfromtechsupport","creepy","LifeProTips","OldSchoolCool","hiphopheads","HistoryPorn","wow","TalesFromRetail","Bitcoin","TheLastAirbender","worldpolitics","Android","roosterteeth","TwoXChromosomes","tf2","fffffffuuuuuuuuuuuu","standupshots","GetMotivated","progresspics","DIY","dayz","mildlyinfuriating","StarWars","Fallout","nottheonion","tumblr","FoodPorn","nosleep","youtubehaiku","firstworldanarchists","interestingasfuck","mindcrack","baseball","motorcycles"];
+var subreddits = ["LasVegas","Nature","Vegas","funny","AdviceAnimals","pics","aww","todayilearned","videos","WTF","gaming","leagueoflegends","gifs","AskReddit","worldnews","TrollXChromosomes","pcmasterrace","4chan","movies","trees","mildlyinteresting","DotA2","reactiongifs","news","politics","pokemon","soccer","atheism","cringepics","technology","gentlemanboners","MakeupAddiction","Minecraft","science","TumblrInAction","woahdude","Showerthoughts","nba","Unexpected","anime","Jokes","cats","Celebs","hearthstone","smashbros","IAmA","gameofthrones","explainlikeimfive","polandball","teenagers","tifu","SquaredCircle","facepalm","conspiracy","circlejerk","GlobalOffensive","Music","bestof","Games","tattoos","food","nfl","EarthPorn","TrollYChromosome","skyrim","fatpeoplehate","comics","magicTCG","Marvel","talesfromtechsupport","creepy","LifeProTips","OldSchoolCool","hiphopheads","HistoryPorn","wow","TalesFromRetail","Bitcoin","TheLastAirbender","worldpolitics","Android","roosterteeth","TwoXChromosomes","tf2","fffffffuuuuuuuuuuuu","standupshots","GetMotivated","progresspics","DIY","dayz","mildlyinfuriating","StarWars","Fallout","nottheonion","tumblr","FoodPorn","nosleep","youtubehaiku","firstworldanarchists","interestingasfuck","mindcrack","baseball","motorcycles"];
  
 $(".typeahead").typeahead({
   hint: true,
@@ -65,7 +65,7 @@ var changeReddit = function(subreddit, listings) {
 
   // Clear any previous stories
   listings.get(0).innerHTML = "";
-
+  if(subredditLower == 'nature')subredditLower = 'EarthPorn';
   var channel = pusher.subscribe(subredditLower);
 
   channel.bind("pusher:subscription_succeeded", function() {
