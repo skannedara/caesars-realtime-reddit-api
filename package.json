@@ -10,14 +10,6 @@
     "type": "git",
     "url": "https://github.com/skannedara/caesars-realtime-reddit-api"
   },
-  "keywords": [
-    "reddit",
-    "realtime",
-    "live",
-    "api",
-    "social",
-    "pusher"
-  ],
   "author": "Siva Kumar Kannedara",
   "license": "Caesars",
   "homepage": "https://github.com/skannedara/caesars-realtime-reddit-api",
