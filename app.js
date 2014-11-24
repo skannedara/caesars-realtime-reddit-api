@@ -35,8 +35,8 @@ app.use(errorHandler({
 app.use(express.static(root));
 
 // Open server on specified port
-app.listen(process.env.PORT || 10030);
-console.log("Starting Express server at 10030");
+app.listen(process.env.PORT || 10037);
+console.log("Starting Express server at 10037");
 
 // Capture uncaught errors
 process.on("uncaughtException", function(err) {
